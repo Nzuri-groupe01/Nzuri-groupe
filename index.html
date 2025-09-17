@@ -1,95 +1,144 @@
-nav a {
-      color: white;
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nzuri Groupe - Événementiel à Goma</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #004d40;
+      color: #fff;
+      padding: 20px 10px;
+      text-align: center;
+    }
+    header img {
+      max-width: 200px;
+      margin-bottom: 10px;
+    }
+    nav {
+      background: #00796b;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #e0f2f1;
+      margin: 0 15px;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: color 0.3s ease;
+      font-weight: bold;
     }
     nav a:hover {
-      color: #ffeaa7;
+      color: #80cbc4;
     }
-    .header-icons {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
-    .header-icons a {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: color 0.3s ease;
-    }
-    .header-icons a:hover {
-      color: #ffeaa7;
-    }
-    .header-icons img.icon {
-      width: 24px;
-      height: 24px;
-      filter: brightness(0) invert(1);
-      transition: transform 0.3s ease;
-    }
-    .header-icons a:hover img.icon {
-      transform: scale(1.2);
-    }
-
-    /* CONTENU PRINCIPAL */
     main {
       max-width: 900px;
-      margin: 30px auto;
+      margin: 20px auto;
       padding: 0 20px;
-      flex-grow: 1;
     }
-
-    main h1 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-      color: #00b894;
+    h1, h2 {
+      color: #004d40;
     }
-    main p {
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-      color: #ddd;
-    }
-
-    /* GALERIE D’IMAGES */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+    section {
       margin-bottom: 40px;
     }
-<p>Nous sommes situés à Goma, commune de Goma, sur la route Sake, en face de la DGI.</p>
-      <p>Contactez-nous au +243 974 927 396 ou suivez-nous sur TikTok : <a href="https://www.tiktok.com/@nzurigroupe" target="_blank" rel="noopener" style="color:#00b894;">@nzurigroupe</a></p>
+    footer {
+      background: #004d40;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      position: fixed;
+      width: 100%;
+      botto
+      }
+    .contact-info {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo2.jpg" alt="Logo Nzuri Groupe" style="width: 200px; height: auto; display: block; margin: auto;">
+    <h1>Nzuri Groupe</h1>
+    <p>Immortaliser vos événements - La fierté congolaise de l'événementiel</p>
+  </header>
+
+  <nav>
+    <a href="#mission">Mission</a>
+    <a href="#vision">Vision</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="mission">
+      <h2>Notre Mission</h2>
+      <p>
+       Créée en 2015 par Monsieur Nzuri Banza, Nzuri Groupe s'engage à immortaliser vos événements avec passion et professionnalisme. Notre équipe dévouée à Goma travaille sans relâche pour offrir des services événementiels uniques et mémorables.
+      </p>
     </section>
 
-    <section id="services" class="gallery">
-      <img src="photo.jpg" alt="Événement " />
-      <img src="photo2.jpg" alt="Événement 2" />
-      <img src="photo3.jpg" alt="Événement 3" />
-       </section>
-  </main>
+    <section id="vision">
+      <h2>Notre Vision</h2>
+      <p>
+        Devenir la fierté congolaise de l'événementiel reconnue partout dans le monde. Nzuri Groupe aspire à mettre en lumière le talent et la culture congolaise à travers des événements de classe mondiale.
+      </p>
+    </section>
 
-  <footer>
-    &copy; 2025 Groupe Nzuri. Tous droits réservés.
-    <div class="social-icons">
-      <a href="https://facebook.com/nzurigroupe" target="_blank" rel="noopener">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" />
+    <section id="photos">
+      <h2>Galerie</h2>
+      <img src="photo.jpg" alt="Photo Nzuri Groupe" style="width: 300px; height: auto; display: block; margin: 20px auto; border-radius: 10px;">
+      <div style="text-align: center;">
+ <div style="text-align: center;">
+  
+  <img src="photo2.jpg" alt="Photo 2" loading="lazy" style="width: 300px; height: auto; margin: 10px; border-radius: 8px;">
+  <img src="photo3.jpg" alt="Photo 3" loading="lazy" style="width: 300px; height: auto; margin: 10px; border-radius: 8px;">
+</div>
+   <!-- Ajoute ici d'autres photos nettes -->
+    </section>
+
+    <section id="contact">
+      <h2>Contactez-Nous</h2>
+      <p>Adresse : Commune de Goma, Route Sake, en face de la DGI, Goma, RDC</p>
+      <p>Téléphone : +243 974 927 396</p>
+      <p>TikTok : <a href="https://www.tiktok.com/@nzurigroupe" target="_blank">nzuri groupe</a></p>
+    </section>
+  </main>
+  <footer style="background-color:#111; color:#fff;">
+  <div style="max-width: 900px; margin: auto; padding: 20px;">
+    <p style="font-size: 18px; margin-bottom: 10px;">&copy; 2025 Groupe Nzuri. Tous droits réservés.</p>
+    <hr style="width: 60px; border: 2px solid #fff;">
+    <p style="font-size: 14px; color: #aaa;">Créé par Kuzo Ndisanze</p>
+    <p style="font-size: 13px; color: #666;">Contactez-nous sur les réseaux :</p>
+
+    <!-- Réseaux sociaux -->
+    <div style="text-align:center; margin-top: 30px;">
+      <h3>Suivez-nous</h3>
+
+
+      <!-- Facebook -->
+      <a href="https://facebook.com/nzurigroupe" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="30" alt="Facebook">
       </a>
-      <a href="https://instagram.com/nzurigroupe" target="_blank" rel="noopener">
-        <img 
-src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+
+      <!-- Instagram -->
+      <a href="https://instagram.com/nzurigroupe" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="30" alt="Instagram">
       </a>
-<a href="https://www.tiktok.com/@nzurigroupe" target="_blank" rel="noopener">
-        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok" />
+
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@nzurigroupe" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" width="30" alt="TikTok">
       </a>
     </div>
-    <div class="creator">Créé par Kuzo Ndisanze</div>
-  </footer>
+</footer>
 
-</body>
+ </body>
 </html>
-```
+    
